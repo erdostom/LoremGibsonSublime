@@ -1,22 +1,15 @@
 import sublime
 import sublime_plugin
-import sys
-import os
 import re
 import random
-
-# request-dists is the folder in our plugin
-sys.path.append(os.path.join(os.path.dirname(__file__), "requests"))
-
-import requests
+import urllib
 
 
 class LoremgibsonCommand(sublime_plugin.TextCommand):
     @classmethod
     def scrapesite(self):
         myText = []
-        r = requests.get('http://loremgibson.com/')
-        raw = r.text
+        raw = urllib.request.urlopen("http://loremgibson.com").read().decode("utf-8")
         regex1 = re.compile("myText\[\d+\].*;")
         var_lines = regex1.findall(raw)
         regex2 = re.compile("myText\[\d+?\] = \"([a-zA-Z- ]+)\";")
