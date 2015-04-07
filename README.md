@@ -15,4 +15,4 @@ git clone https://github.com/erdostom/LoremGibsonSublime.git
 ````
 
 Screenshot:
-![screenshot](http://i.imgur.com/MaJd8PJ.png)
+![screenshot](https://i.imgur.com/Cz02KR3.pn)
