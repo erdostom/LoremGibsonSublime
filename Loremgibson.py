@@ -26,4 +26,8 @@ class LoremgibsonCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         out = LoremgibsonCommand.generate_paragraph(random.randint(3, 9))
+        out = out.replace('- ', '-')
+        out = out.replace(' -', '-')
+        out = out.replace('-.', '.')
+        out = out + ' '
         self.view.insert(edit, self.view.sel()[0].begin(), out)
