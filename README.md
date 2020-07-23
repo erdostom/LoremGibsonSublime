@@ -4,7 +4,7 @@ Generates filler text in the style of William Gibson's writing.
 
 Just hit `ctrl-shift-L`.
 
-This plug-in is very much inspired by <http://loremgibson.com>. [@davidtweaver](https://twitter.com/DavidTWeaver) deserves all credit.
+Inspired by [@davidtweaver](https://twitter.com/DavidTWeaver) and [William Gibson](https://twitter.com/GreatDismal).
 
 ## Installation
 
