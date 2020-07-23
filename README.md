@@ -1,3 +1,4 @@
+![](https://packagecontrol.herokuapp.com/downloads/LoremGibson.svg)
 # LoremGibson
 
 Generates filler text in the style of William Gibson's writing.
